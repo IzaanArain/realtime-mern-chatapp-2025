@@ -5,12 +5,13 @@ import { apiUrls } from "../utils/constants";
 export const useAuthStore = create((set) => ({
     authUser: null,
     isSigningUp: false,
-    isLoggingUp: false,
+    isLoggingIn: false,
     isUpdatingProfile: false,
     isCheckingAuth: true, // loading state
     checkAuth: async () => {
         try {
             const res = await axiosInstance.get(apiUrls.authCheck);
+            console.log(res)
             const data = res.data;
             set({authUser:data});
         } catch (error) {
@@ -19,5 +20,8 @@ export const useAuthStore = create((set) => ({
         } finally {
             set({isCheckingAuth:false})
         }
+    },
+    signup: async (data) => {
+
     }
 }));
