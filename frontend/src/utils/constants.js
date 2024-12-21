@@ -6,4 +6,5 @@ export const apiUrls = {
     signup: "/auth/signup",
     logout: "/auth/logout",
     login: "/auth/login",
+    updateProfile: "/auth/edit-profile",
 }
