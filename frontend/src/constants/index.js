@@ -1,0 +1,45 @@
+
+export const baseUrl = import.meta.env.VITE_BASEURL
+
+export const apiUrls = {
+    authCheck: "/auth/check",
+    signup: "/auth/signup",
+    logout: "/auth/logout",
+    login: "/auth/login",
+    updateProfile: "/auth/edit-profile",
+}
+
+export const THEMES = [
+    "light",
+    "dark",
+    "cupcake",
+    "bumblebee",
+    "emerald",
+    "corporate",
+    "synthwave",
+    "retro",
+    "cyberpunk",
+    "valentine",
+    "halloween",
+    "garden",
+    "forest",
+    "aqua",
+    "lofi",
+    "pastel",
+    "fantasy",
+    "wireframe",
+    "black",
+    "luxury",
+    "dracula",
+    "cmyk",
+    "autumn",
+    "business",
+    "acid",
+    "lemonade",
+    "night",
+    "coffee",
+    "winter",
+    "dim",
+    "nord",
+    "sunset",
+  ]
